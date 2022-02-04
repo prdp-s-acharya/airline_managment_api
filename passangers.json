@@ -1,0 +1,9 @@
+{
+  "passangers": [
+    { "id": 3, "name": "abc", "age": 32, "flightId": 1, "checkIn": false },
+    { "id": 4, "name": "abc", "age": 32, "flightId": 1, "checkIn": false },
+    { "id": 5, "name": "absc", "age": 32, "flightId": 2, "checkIn": false },
+    { "id": 1, "name": "abcrt", "age": 32, "flightId": 1, "checkIn": false },
+    { "id": 2, "name": "abcer", "age": 32, "flightId": 1, "checkIn": false }
+  ]
+}
