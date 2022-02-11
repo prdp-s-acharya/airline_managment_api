@@ -23,13 +23,18 @@ var router = express.Router(); // get an instance of the express Router
 
 const row = fs.readFileSync("./passangers.json");
 let passangers = JSON.parse(row);
+const row = fs.readFileSync("./flights.json");
+let fligts = JSON.parse(row);
 
 // test route to make sure everything is working (accessed at GET http://localhost:8080/api)
-router.get("/", function (req, res) {
+router.get("/passangers", function (req, res) {
   res.json(passangers);
 });
+router.get("/flights", function (req, res) {
+  res.json(fligts);
+});
 
-router.post("/", function (req, res) {
+router.post("/passangers", function (req, res) {
   const passanger = req.body;
   console.log(passanger);
   console.log(passangers.passangers);
